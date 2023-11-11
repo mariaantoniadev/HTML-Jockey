@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link estilos.css>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Jockey Club de Pelotas</h1>
+        <h2>Central de Apostas</h2>
+    </header>
+
+    <main>
+        <img src="jockey.jpg" alt="Corrida de Cavalos">
+        <form>
+            <label for="nome">Nome do Apostador:</label>
+            <input type="text" id="nome" required
+                  placeholder="Nome completo do apostador">
+
+            <label for="email">Email para contato</label>
+            <input type="email" id="email" required 
+                placeholder="E-mail para contato">
+            
+            <label for="cavalo">Nº e nome do cavalo</label>
+            <select id="cavalo">
+                <option value="1">1. Tordilho</option>
+                <option value="2">2. Uruguaio</option>
+                <option value="3">3. Veloz Belga</option>
+                <option value="4">4. Belo Castelhano</option>
+            </select>
+
+            <label for="valor">Valor da Aposta R$:</label>
+            <input type="number" id="valor" required
+            placeholder="Informe um valor múltiplo de 5"
+            min="5" max="100" step="5">
+
+            <input type="submit" value="Confirmar Aposta">
+        </form>
+    </main>
+
+    <footer>
+        <h4>Av. Zeferino Costa, 345 - Pelotas-RS</h4>
+    </footer>
+</body>
+</html>
